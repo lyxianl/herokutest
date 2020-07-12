@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+		<style>
+			#foo {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+			#goo {
+				padding-bottom: 10px;
+			}
+			#boo {
+				display:flex;
+				border:1px solid #dfe1e5;
+				box-shadow:none;
+				border-radius:24px;
+				z-index:3;
+				height:44px;
+				margin:0 auto;
+				width:482px;
+				padding-left: 20px;	
+			}
+			#boo:focus, #boo:hover {
+				outline: none;
+				box-shadow: 2px 2px 5px #333333;
+			}
+		</style>
+    </head>
+    <body>
+		<!-- Navigation Bar -->
+		<div style="text-align: right;">
+			<button onclick="window.location.href='index.html'">Back to Search</button>
+		</div>
+		<!-- Image -->
+		<div style="text-align: center;">
+			<img id="foo" alt="Blank" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+		</div>
+		<!-- Search Bar -->
+		<div style="text-align: center;">
+			<form action="https://google.com/search?tbm=isch">
+				<input id="boo" type="text" name="q"></br>
+				<input type="submit" value="Google Image Search">
+				<input type="hidden" name="tbm" value="isch">
+			</form>
+		</div>
+    </body>
+</html>
